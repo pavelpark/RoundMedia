@@ -20,11 +20,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZ9-02-Jpt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <color key="backgroundColor" red="1" green="0.75686274509803919" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="wJM-vK-4KG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Kg-XW-BYf">
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.5607843137254902" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Pu4-6L-l0Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OZ9-02-Jpt" secondAttribute="trailing" id="JrT-ro-SAd"/>
+                            <constraint firstItem="OZ9-02-Jpt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KSa-QZ-Hqb"/>
+                            <constraint firstItem="5Kg-XW-BYf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NjH-NU-hod"/>
+                            <constraint firstItem="OZ9-02-Jpt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OU0-iF-lnX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Kg-XW-BYf" secondAttribute="bottom" id="q6y-Yz-EJ6"/>
+                            <constraint firstAttribute="trailing" secondItem="5Kg-XW-BYf" secondAttribute="trailing" id="vUN-Y3-jyx"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="127.28635682158921"/>
         </scene>
     </scenes>
 </document>
