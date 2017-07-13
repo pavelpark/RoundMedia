@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0DCD771F16F7AF0046E8BC /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = DB0DCD761F16F7AF0046E8BC /* GoogleService-Info (1).plist */; };
 		DBCED1981F15E06800B90586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCED1971F15E06800B90586 /* AppDelegate.swift */; };
 		DBCED19A1F15E06800B90586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCED1991F15E06800B90586 /* ViewController.swift */; };
 		DBCED19D1F15E06800B90586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCED19B1F15E06800B90586 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB0DCD761F16F7AF0046E8BC /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		DBCED1941F15E06800B90586 /* roundMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roundMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCED1971F15E06800B90586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBCED1991F15E06800B90586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				DBCED19E1F15E06800B90586 /* Assets.xcassets */,
 				DBCED1A01F15E06800B90586 /* LaunchScreen.storyboard */,
 				DBCED1A31F15E06800B90586 /* Info.plist */,
+				DB0DCD761F16F7AF0046E8BC /* GoogleService-Info (1).plist */,
 			);
 			path = roundMedia;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 				DBCED1A21F15E06800B90586 /* LaunchScreen.storyboard in Resources */,
 				DBCED19F1F15E06800B90586 /* Assets.xcassets in Resources */,
 				DBCED19D1F15E06800B90586 /* Main.storyboard in Resources */,
+				DB0DCD771F16F7AF0046E8BC /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +308,7 @@
 				DBCED1A81F15E06800B90586 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
