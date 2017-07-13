@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB0DCD771F16F7AF0046E8BC /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = DB0DCD761F16F7AF0046E8BC /* GoogleService-Info (1).plist */; };
+		3E71B527A09D5ED5A9876E41 /* Pods_roundMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EB73A08C344A4144A5BACC /* Pods_roundMedia.framework */; };
+		DB0DCD771F16F7AF0046E8BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB0DCD761F16F7AF0046E8BC /* GoogleService-Info.plist */; };
 		DBCED1981F15E06800B90586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCED1971F15E06800B90586 /* AppDelegate.swift */; };
 		DBCED19A1F15E06800B90586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCED1991F15E06800B90586 /* ViewController.swift */; };
 		DBCED19D1F15E06800B90586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCED19B1F15E06800B90586 /* Main.storyboard */; };
@@ -16,7 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB0DCD761F16F7AF0046E8BC /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		29BECD21DDEC32BD293EDEDB /* Pods-roundMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roundMedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roundMedia/Pods-roundMedia.debug.xcconfig"; sourceTree = "<group>"; };
+		445C6D23F30956F6D51B760C /* Pods-roundMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roundMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-roundMedia/Pods-roundMedia.release.xcconfig"; sourceTree = "<group>"; };
+		D8EB73A08C344A4144A5BACC /* Pods_roundMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roundMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0DCD761F16F7AF0046E8BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBCED1941F15E06800B90586 /* roundMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roundMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCED1971F15E06800B90586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBCED1991F15E06800B90586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E71B527A09D5ED5A9876E41 /* Pods_roundMedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		426CB2883E4743375866FF4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29BECD21DDEC32BD293EDEDB /* Pods-roundMedia.debug.xcconfig */,
+				445C6D23F30956F6D51B760C /* Pods-roundMedia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		73317BBE060F7A1966389CFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8EB73A08C344A4144A5BACC /* Pods_roundMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DBCED18B1F15E06800B90586 = {
 			isa = PBXGroup;
 			children = (
 				DBCED1961F15E06800B90586 /* roundMedia */,
 				DBCED1951F15E06800B90586 /* Products */,
+				426CB2883E4743375866FF4E /* Pods */,
+				73317BBE060F7A1966389CFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,7 +86,7 @@
 				DBCED19E1F15E06800B90586 /* Assets.xcassets */,
 				DBCED1A01F15E06800B90586 /* LaunchScreen.storyboard */,
 				DBCED1A31F15E06800B90586 /* Info.plist */,
-				DB0DCD761F16F7AF0046E8BC /* GoogleService-Info (1).plist */,
+				DB0DCD761F16F7AF0046E8BC /* GoogleService-Info.plist */,
 			);
 			path = roundMedia;
 			sourceTree = "<group>";
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBCED1A61F15E06800B90586 /* Build configuration list for PBXNativeTarget "roundMedia" */;
 			buildPhases = (
+				CD46BAC7D5052C7E0A7291C9 /* [CP] Check Pods Manifest.lock */,
 				DBCED1901F15E06800B90586 /* Sources */,
 				DBCED1911F15E06800B90586 /* Frameworks */,
 				DBCED1921F15E06800B90586 /* Resources */,
+				FC11BBA0B677599BB9092E71 /* [CP] Embed Pods Frameworks */,
+				160AC5F7A7D4AEC852D267E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +157,59 @@
 				DBCED1A21F15E06800B90586 /* LaunchScreen.storyboard in Resources */,
 				DBCED19F1F15E06800B90586 /* Assets.xcassets in Resources */,
 				DBCED19D1F15E06800B90586 /* Main.storyboard in Resources */,
-				DB0DCD771F16F7AF0046E8BC /* GoogleService-Info (1).plist in Resources */,
+				DB0DCD771F16F7AF0046E8BC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		160AC5F7A7D4AEC852D267E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roundMedia/Pods-roundMedia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD46BAC7D5052C7E0A7291C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC11BBA0B677599BB9092E71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roundMedia/Pods-roundMedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DBCED1901F15E06800B90586 /* Sources */ = {
@@ -265,6 +340,7 @@
 		};
 		DBCED1A71F15E06800B90586 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29BECD21DDEC32BD293EDEDB /* Pods-roundMedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6X88V8MC7R;
@@ -278,6 +354,7 @@
 		};
 		DBCED1A81F15E06800B90586 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445C6D23F30956F6D51B760C /* Pods-roundMedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6X88V8MC7R;
