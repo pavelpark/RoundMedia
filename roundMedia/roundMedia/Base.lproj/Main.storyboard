@@ -76,17 +76,47 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="fb"/>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ce-mo-qBS">
+                                <rect key="frame" x="67" y="311" width="241" height="30"/>
+                                <color key="textColor" cyan="0.70672869682312012" magenta="0.48866370320320129" yellow="0.012355527840554714" black="1" alpha="0.86552868150684936" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s32-97-WHK">
+                                <rect key="frame" x="67" y="361" width="241" height="30"/>
+                                <color key="textColor" cyan="0.70672869679999994" magenta="0.48866370320000002" yellow="0.01235552784" black="1" alpha="0.86552868149999995" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjN-Ez-FqF">
+                                <rect key="frame" x="246" y="407" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="R1M-cY-U09"/>
+                                    <constraint firstAttribute="height" constant="30" id="jum-YU-vdf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Sign In"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0Ta-fu-3td" firstAttribute="top" secondItem="8bd-H2-eXg" secondAttribute="bottom" constant="16" id="BLv-Ws-Csh"/>
                             <constraint firstItem="8bd-H2-eXg" firstAttribute="top" secondItem="OZ9-02-Jpt" secondAttribute="bottom" constant="20" id="DbL-mw-sj3"/>
+                            <constraint firstAttribute="trailing" secondItem="TjN-Ez-FqF" secondAttribute="trailing" constant="67" id="IHE-wS-Q9d"/>
                             <constraint firstAttribute="trailing" secondItem="OZ9-02-Jpt" secondAttribute="trailing" id="JrT-ro-SAd"/>
                             <constraint firstItem="OZ9-02-Jpt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KSa-QZ-Hqb"/>
+                            <constraint firstItem="0ce-mo-qBS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="Mi5-V4-9Pf"/>
                             <constraint firstItem="5Kg-XW-BYf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NjH-NU-hod"/>
+                            <constraint firstItem="s32-97-WHK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="OP7-c3-IgA"/>
                             <constraint firstItem="OZ9-02-Jpt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OU0-iF-lnX"/>
+                            <constraint firstItem="TjN-Ez-FqF" firstAttribute="top" secondItem="s32-97-WHK" secondAttribute="bottom" constant="16" id="PA4-0e-5pK"/>
                             <constraint firstAttribute="trailing" secondItem="8bd-H2-eXg" secondAttribute="trailing" constant="8" id="SHn-1A-bmu"/>
+                            <constraint firstAttribute="trailing" secondItem="s32-97-WHK" secondAttribute="trailing" constant="67" id="lpo-M0-gwX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Kg-XW-BYf" secondAttribute="bottom" id="q6y-Yz-EJ6"/>
+                            <constraint firstAttribute="trailing" secondItem="0ce-mo-qBS" secondAttribute="trailing" constant="67" id="rgw-ww-5XY"/>
+                            <constraint firstItem="TjN-Ez-FqF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="246" id="tjL-bp-XVk"/>
+                            <constraint firstItem="s32-97-WHK" firstAttribute="top" secondItem="0ce-mo-qBS" secondAttribute="bottom" constant="20" id="uc2-qs-5TC"/>
+                            <constraint firstItem="0ce-mo-qBS" firstAttribute="top" secondItem="0Ta-fu-3td" secondAttribute="bottom" constant="29" id="uoQ-KU-RFx"/>
                             <constraint firstAttribute="trailing" secondItem="5Kg-XW-BYf" secondAttribute="trailing" id="vUN-Y3-jyx"/>
                             <constraint firstItem="8bd-H2-eXg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="vcp-FS-XKy"/>
                             <constraint firstItem="0Ta-fu-3td" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-0.5" id="yvc-de-IH8"/>
