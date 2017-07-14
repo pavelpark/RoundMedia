@@ -30,20 +30,44 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Kg-XW-BYf">
                                 <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you haven't signed in before, an account will be automatically created for you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSo-NZ-imx">
+                                        <rect key="frame" x="8" y="8" width="359" height="59"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.5607843137254902" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KSo-NZ-imx" secondAttribute="trailing" constant="8" id="EoR-6e-jax"/>
                                     <constraint firstAttribute="height" constant="75" id="Pu4-6L-l0Y"/>
+                                    <constraint firstItem="KSo-NZ-imx" firstAttribute="top" secondItem="5Kg-XW-BYf" secondAttribute="top" constant="8" id="aEE-UR-6dr"/>
+                                    <constraint firstItem="KSo-NZ-imx" firstAttribute="leading" secondItem="5Kg-XW-BYf" secondAttribute="leading" constant="8" id="cFY-VO-3CK"/>
+                                    <constraint firstAttribute="bottom" secondItem="KSo-NZ-imx" secondAttribute="bottom" constant="8" id="mzs-oN-utd"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bd-H2-eXg">
+                                <rect key="frame" x="8" y="170" width="359" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="kYQ-Ka-lf9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <color key="textColor" cyan="0.00076626031659543514" magenta="0.39429950714111328" yellow="0.88157188892364502" black="1" alpha="0.87168236301369861" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8bd-H2-eXg" firstAttribute="top" secondItem="OZ9-02-Jpt" secondAttribute="bottom" constant="20" id="DbL-mw-sj3"/>
                             <constraint firstAttribute="trailing" secondItem="OZ9-02-Jpt" secondAttribute="trailing" id="JrT-ro-SAd"/>
                             <constraint firstItem="OZ9-02-Jpt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KSa-QZ-Hqb"/>
                             <constraint firstItem="5Kg-XW-BYf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NjH-NU-hod"/>
                             <constraint firstItem="OZ9-02-Jpt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OU0-iF-lnX"/>
+                            <constraint firstAttribute="trailing" secondItem="8bd-H2-eXg" secondAttribute="trailing" constant="8" id="SHn-1A-bmu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Kg-XW-BYf" secondAttribute="bottom" id="q6y-Yz-EJ6"/>
                             <constraint firstAttribute="trailing" secondItem="5Kg-XW-BYf" secondAttribute="trailing" id="vUN-Y3-jyx"/>
+                            <constraint firstItem="8bd-H2-eXg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="vcp-FS-XKy"/>
                         </constraints>
                     </view>
                 </viewController>
