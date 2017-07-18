@@ -56,6 +56,21 @@ class SignInViewController: UIViewController {
 
     @IBAction func emailSignInTapped(_ sender: AnyObject) {
         
+        if let email = emailFeild.text, let password = passwordFeild.text {
+            Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
+                if error == nil {
+                    print("-----: Email user authenticated with Firebase")
+                } else {
+                    Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
+                        if error != nil {
+                            print("------: Unable to authenticate with Firebase using email")
+                        } else {
+                            print("------: Successfully authenticated with Firebase")
+                        }
+                    })
+                }
+            })
+        }
     }
 }
 
