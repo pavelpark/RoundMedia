@@ -50,5 +50,8 @@ class SignInViewController: UIViewController {
         }
     }
 
+    @IBAction func emailSignInTapped(_ sender: AnyObject) {
+        
+    }
 }
 
