@@ -35,6 +35,7 @@ class SignInViewController: UIViewController {
             } else {
                 print("------: Successfully authenticated with Facebook")
                 let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                self.firebaseAuth(credential)
             }
         }
     }
@@ -43,6 +44,8 @@ class SignInViewController: UIViewController {
         Auth.auth().signIn(with: credential) { (user, error) in
             if error != nil {
                 print("------: Unable to authenticate with Firebase - \(String(describing: error))")
+            } else {
+                print("------: Susseccfully authenticated with Firebase")
             }
         }
     }
