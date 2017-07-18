@@ -43,7 +43,7 @@ class SignInViewController: UIViewController {
     func firebaseAuth(_ credential: AuthCredential) {
         Auth.auth().signIn(with: credential) { (user, error) in
             if error != nil {
-                print("------: Unable to authenticate with Firebase - \(String(describing: error))")
+                print("------: Unable to authenticate with Firebase")
             } else {
                 print("------: Susseccfully authenticated with Firebase")
             }
