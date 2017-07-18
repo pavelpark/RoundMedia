@@ -12,6 +12,10 @@ import FBSDKLoginKit
 import Firebase
 
 class SignInViewController: UIViewController {
+    
+    @IBOutlet weak var emailFeild: CleanText!
+    @IBOutlet weak var passwordFeild: CleanText!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

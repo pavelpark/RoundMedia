@@ -128,6 +128,10 @@
                             <constraint firstItem="0Ta-fu-3td" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-0.5" id="yvc-de-IH8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailFeild" destination="0ce-mo-qBS" id="lLY-be-avV"/>
+                        <outlet property="passwordFeild" destination="s32-97-WHK" id="E2X-oT-9Dw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
