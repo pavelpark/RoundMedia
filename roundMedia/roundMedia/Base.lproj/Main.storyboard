@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="127.28635682158921"/>
         </scene>
-        <!--View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="LHK-iE-UA8">
             <objects>
-                <viewController id="oxh-Dh-SHU" sceneMemberID="viewController">
+                <viewController id="oxh-Dh-SHU" customClass="FeedViewController" customModule="roundMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VMS-XE-2bv"/>
                         <viewControllerLayoutGuide type="bottom" id="Uwf-J9-bVn"/>
