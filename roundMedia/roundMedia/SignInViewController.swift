@@ -20,7 +20,11 @@ class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if let _ = KeychainWrapper.defaultKeychainWrapper.string(forKey: KEY_UID){
+        performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
+        
     }
 
    
@@ -79,6 +83,7 @@ class SignInViewController: UIViewController {
     func completeWithSignIn(id: String) {
         let keychainResult = KeychainWrapper.standard.set("string" , forKey: "key uid")
         print("------: Data saved to keychain \(keychainResult)")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
     }
     
 }
