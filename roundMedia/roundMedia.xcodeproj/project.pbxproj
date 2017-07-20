@@ -93,6 +93,9 @@
 				DB0DCD7B1F19A99C0046E8BC /* CleanView.swift */,
 				DB0DCD821F19AE090046E8BC /* CleanText.swift */,
 				DB0DCD841F1C02C10046E8BC /* CleanButton.swift */,
+				DBCED19B1F15E06800B90586 /* Main.storyboard */,
+				DBCED19E1F15E06800B90586 /* Assets.xcassets */,
+				DBCED1A01F15E06800B90586 /* LaunchScreen.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -131,9 +134,6 @@
 				DB0DCD791F1700B50046E8BC /* Model */,
 				DB0DCD7A1F1700C60046E8BC /* View */,
 				DB0DCD781F1700A50046E8BC /* Controller */,
-				DBCED19B1F15E06800B90586 /* Main.storyboard */,
-				DBCED19E1F15E06800B90586 /* Assets.xcassets */,
-				DBCED1A01F15E06800B90586 /* LaunchScreen.storyboard */,
 				DBCED1A31F15E06800B90586 /* Info.plist */,
 				DB0DCD761F16F7AF0046E8BC /* GoogleService-Info.plist */,
 			);

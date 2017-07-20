@@ -131,7 +131,7 @@
                     <connections>
                         <outlet property="emailFeild" destination="0ce-mo-qBS" id="lLY-be-avV"/>
                         <outlet property="passwordFeild" destination="s32-97-WHK" id="E2X-oT-9Dw"/>
-                        <segue destination="oxh-Dh-SHU" kind="show" id="qAm-0N-YiU"/>
+                        <segue destination="oxh-Dh-SHU" kind="show" identifier="goToFeed" id="qAm-0N-YiU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
