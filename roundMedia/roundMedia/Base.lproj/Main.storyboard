@@ -131,6 +131,7 @@
                     <connections>
                         <outlet property="emailFeild" destination="0ce-mo-qBS" id="lLY-be-avV"/>
                         <outlet property="passwordFeild" destination="s32-97-WHK" id="E2X-oT-9Dw"/>
+                        <segue destination="oxh-Dh-SHU" kind="show" id="qAm-0N-YiU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -148,7 +149,7 @@
                     <view key="view" contentMode="scaleToFill" id="JaO-4H-kMl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.56078431370000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yh2-uR-j5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
