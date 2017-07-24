@@ -15,5 +15,8 @@ class FeedViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func signInTapped(_ sender: Any) {
+        
+    }
 
 }
