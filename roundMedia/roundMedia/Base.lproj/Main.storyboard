@@ -155,7 +155,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Sign Out"/>
                                 <connections>
-                                    <action selector="signInTapped:" destination="oxh-Dh-SHU" eventType="touchUpInside" id="V6V-qV-EXv"/>
+                                    <action selector="signOutButton:" destination="oxh-Dh-SHU" eventType="touchUpInside" id="dCV-oT-Fn3"/>
                                 </connections>
                             </button>
                         </subviews>

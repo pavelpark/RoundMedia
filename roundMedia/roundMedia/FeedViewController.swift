@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SwiftKeychainWrapper
 
 class FeedViewController: UIViewController {
 
@@ -15,8 +17,12 @@ class FeedViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func signInTapped(_ sender: Any) {
-        
+   
+    @IBAction func signOutButton(_ sender: Any) {
+        let KeychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+        print("-----: Removed successful \(KeychainResult)")
+        try! Auth.auth().signOut()
+        performSegue(withIdentifier: "goToSignIn", sender: nil)
     }
 
 }
