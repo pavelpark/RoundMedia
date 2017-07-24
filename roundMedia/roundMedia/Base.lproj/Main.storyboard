@@ -167,6 +167,9 @@
                             <constraint firstAttribute="trailing" secondItem="6gD-15-v6n" secondAttribute="trailing" constant="273" id="PMz-PW-ziH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="ynj-aT-X8P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yh2-uR-j5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
