@@ -20,13 +20,14 @@ class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let _ = KeychainWrapper.defaultKeychainWrapper.string(forKey: KEY_UID){
-        performSegue(withIdentifier: "goToFeed", sender: nil)
-        }
-        
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.defaultKeychainWrapper.string(forKey: KEY_UID){
+            print("------: ID found in keychain")
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
+    }
    
 
     @IBAction func facebookButtonTapped(_ sender: AnyObject) {
