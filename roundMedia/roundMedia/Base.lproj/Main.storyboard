@@ -149,7 +149,21 @@
                     <view key="view" contentMode="scaleToFill" id="JaO-4H-kMl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKw-Io-q58">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="XLH-hX-zPM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NKw-Io-q58" firstAttribute="leading" secondItem="JaO-4H-kMl" secondAttribute="leading" id="Mob-g6-lbd"/>
+                            <constraint firstAttribute="trailing" secondItem="NKw-Io-q58" secondAttribute="trailing" id="NHB-5C-3wI"/>
+                            <constraint firstItem="NKw-Io-q58" firstAttribute="top" secondItem="JaO-4H-kMl" secondAttribute="top" id="j9K-vq-GKo"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="ynj-aT-X8P"/>
