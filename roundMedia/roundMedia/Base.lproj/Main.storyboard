@@ -152,9 +152,28 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKw-Io-q58" customClass="CleanView" customModule="roundMedia" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="WBe-a6-nhB">
+                                        <rect key="frame" x="16" y="19" width="45" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="RU6-ih-bhW"/>
+                                            <constraint firstAttribute="height" constant="38" id="W7c-ii-XoL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXv-AQ-OKe">
+                                        <rect key="frame" x="151" y="28" width="73" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.75686274509803919" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WBe-a6-nhB" secondAttribute="bottom" constant="8" id="ALw-U6-q0V"/>
                                     <constraint firstAttribute="height" constant="65" id="XLH-hX-zPM"/>
+                                    <constraint firstItem="WBe-a6-nhB" firstAttribute="leading" secondItem="NKw-Io-q58" secondAttribute="leading" constant="16" id="oK2-KL-Voq"/>
+                                    <constraint firstItem="WBe-a6-nhB" firstAttribute="top" secondItem="NKw-Io-q58" secondAttribute="top" constant="19" id="sui-NF-uzA"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEW-Gd-QZJ" customClass="CleanView" customModule="roundMedia" customModuleProvider="target">
@@ -217,5 +236,6 @@
     <resources>
         <image name="RMLogo" width="1200" height="1200"/>
         <image name="fb" width="800" height="301"/>
+        <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>
