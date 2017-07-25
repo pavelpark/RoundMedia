@@ -149,23 +149,7 @@
                     <view key="view" contentMode="scaleToFill" id="JaO-4H-kMl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gD-15-v6n">
-                                <rect key="frame" x="16" y="20" width="86" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Sign Out"/>
-                                <connections>
-                                    <action selector="signOutButton:" destination="oxh-Dh-SHU" eventType="touchUpInside" id="dCV-oT-Fn3"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.56078431370000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="6gD-15-v6n" firstAttribute="top" secondItem="VMS-XE-2bv" secondAttribute="bottom" id="4eU-Pb-nY2"/>
-                            <constraint firstItem="Uwf-J9-bVn" firstAttribute="top" secondItem="6gD-15-v6n" secondAttribute="bottom" constant="617" id="ByS-ND-NiE"/>
-                            <constraint firstItem="6gD-15-v6n" firstAttribute="leading" secondItem="JaO-4H-kMl" secondAttribute="leading" constant="16" id="EIt-qH-rco"/>
-                            <constraint firstAttribute="trailing" secondItem="6gD-15-v6n" secondAttribute="trailing" constant="273" id="PMz-PW-ziH"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="ynj-aT-X8P"/>
