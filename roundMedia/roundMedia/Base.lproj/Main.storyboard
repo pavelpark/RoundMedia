@@ -150,19 +150,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKw-Io-q58">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKw-Io-q58" customClass="CleanView" customModule="roundMedia" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.75686274509803919" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="XLH-hX-zPM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEW-Gd-QZJ" customClass="CleanView" customModule="roundMedia" customModuleProvider="target">
+                                <rect key="frame" x="16" y="81" width="343" height="65"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.93725490196078431" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="00c-qd-vET"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="lEW-Gd-QZJ" firstAttribute="leading" secondItem="JaO-4H-kMl" secondAttribute="leading" constant="16" id="2v9-ow-Izs"/>
                             <constraint firstItem="NKw-Io-q58" firstAttribute="leading" secondItem="JaO-4H-kMl" secondAttribute="leading" id="Mob-g6-lbd"/>
                             <constraint firstAttribute="trailing" secondItem="NKw-Io-q58" secondAttribute="trailing" id="NHB-5C-3wI"/>
+                            <constraint firstAttribute="trailing" secondItem="lEW-Gd-QZJ" secondAttribute="trailing" constant="16" id="b8J-fs-y3B"/>
                             <constraint firstItem="NKw-Io-q58" firstAttribute="top" secondItem="JaO-4H-kMl" secondAttribute="top" id="j9K-vq-GKo"/>
+                            <constraint firstItem="lEW-Gd-QZJ" firstAttribute="top" secondItem="NKw-Io-q58" secondAttribute="bottom" constant="16" id="of0-eN-vIY"/>
                         </constraints>
                     </view>
                     <connections>
