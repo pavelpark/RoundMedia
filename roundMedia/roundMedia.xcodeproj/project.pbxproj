@@ -178,7 +178,7 @@
 				TargetAttributes = {
 					DBCED1931F15E06800B90586 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 6X88V8MC7R;
+						DevelopmentTeam = FQ3G8657EV;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -406,7 +406,7 @@
 			baseConfigurationReference = 29BECD21DDEC32BD293EDEDB /* Pods-roundMedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6X88V8MC7R;
+				DEVELOPMENT_TEAM = FQ3G8657EV;
 				INFOPLIST_FILE = roundMedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyApp.roundMedia;
@@ -420,7 +420,7 @@
 			baseConfigurationReference = 445C6D23F30956F6D51B760C /* Pods-roundMedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6X88V8MC7R;
+				DEVELOPMENT_TEAM = FQ3G8657EV;
 				INFOPLIST_FILE = roundMedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyApp.roundMedia;
