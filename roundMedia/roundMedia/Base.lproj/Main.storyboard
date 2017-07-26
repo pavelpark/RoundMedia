@@ -218,7 +218,7 @@
                                     <constraint firstAttribute="bottom" secondItem="S14-E0-40X" secondAttribute="bottom" constant="8" id="x7b-yC-yA3"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="348" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-vY-nEg">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="348" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-vY-nEg">
                                 <rect key="frame" x="0.0" y="162" width="375" height="505"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -226,7 +226,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="348"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4xU-Pi-529" id="tSr-Ov-EhB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="347.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="348"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4nX-TH-xES" customClass="CleanView" customModule="roundMedia" customModuleProvider="target">
