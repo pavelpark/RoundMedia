@@ -98,10 +98,10 @@
 				DB0DCD821F19AE090046E8BC /* CleanText.swift */,
 				DB0DCD841F1C02C10046E8BC /* CleanButton.swift */,
 				DB6BDA361F27E41E00503EF1 /* RoundView.swift */,
+				DB6BDA381F294E5200503EF1 /* PostCell.swift */,
 				DBCED19B1F15E06800B90586 /* Main.storyboard */,
 				DBCED19E1F15E06800B90586 /* Assets.xcassets */,
 				DBCED1A01F15E06800B90586 /* LaunchScreen.storyboard */,
-				DB6BDA381F294E5200503EF1 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
