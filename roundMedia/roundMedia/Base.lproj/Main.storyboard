@@ -183,14 +183,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S14-E0-40X">
                                         <rect key="frame" x="8" y="8" width="327" height="49"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="eDo-uI-eRP">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="eDo-uI-eRP" customClass="RoundView" customModule="roundMedia" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="cT4-S6-NmH"/>
                                                     <constraint firstAttribute="width" constant="49" id="kg9-hM-WgX"/>
                                                 </constraints>
                                             </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kno-zw-Yxy" customClass="CleanText" customModule="roundMedia" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kno-zw-Yxy" customClass="CleanText" customModule="roundMedia" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="0.0" width="209" height="49"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -224,7 +224,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="315"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4xU-Pi-529" id="tSr-Ov-EhB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="315"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="314.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4nX-TH-xES" customClass="CleanView" customModule="roundMedia" customModuleProvider="target">
