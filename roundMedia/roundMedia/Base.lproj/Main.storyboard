@@ -209,7 +209,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.47058823529411764" green="0.56470588235294117" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="00c-qd-vET"/>
                                     <constraint firstItem="S14-E0-40X" firstAttribute="leading" secondItem="lEW-Gd-QZJ" secondAttribute="leading" constant="8" id="9a8-Pa-6Tc"/>
@@ -219,7 +219,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="348" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-vY-nEg">
-                                <rect key="frame" x="0.0" y="162" width="375" height="505"/>
+                                <rect key="frame" x="0.0" y="154" width="375" height="513"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="348" id="4xU-Pi-529" customClass="PostCell" customModule="roundMedia" customModuleProvider="target">
@@ -289,7 +289,7 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.47058823529411764" green="0.56470588235294117" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="27Q-xg-8wZ" firstAttribute="top" secondItem="yct-DC-8Z9" secondAttribute="bottom" constant="8" id="2X9-BE-5Lc"/>
                                                         <constraint firstAttribute="trailing" secondItem="27Q-xg-8wZ" secondAttribute="trailing" constant="8" id="53Y-Lh-YpD"/>
@@ -307,6 +307,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="4nX-TH-xES" secondAttribute="trailing" constant="16" id="iD7-ba-htZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.47058823529999999" green="0.56470588239999997" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="LikesLabel" destination="d5O-j7-dvW" id="cUV-WE-2KI"/>
                                             <outlet property="caption" destination="kwf-Ww-64C" id="8Rb-UG-Lvx"/>
@@ -318,7 +319,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.47058823529999999" green="0.56470588239999997" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="lEW-Gd-QZJ" firstAttribute="leading" secondItem="JaO-4H-kMl" secondAttribute="leading" constant="16" id="2v9-ow-Izs"/>
                             <constraint firstItem="NKw-Io-q58" firstAttribute="leading" secondItem="JaO-4H-kMl" secondAttribute="leading" id="Mob-g6-lbd"/>
@@ -328,7 +329,7 @@
                             <constraint firstItem="Uwf-J9-bVn" firstAttribute="top" secondItem="bzV-vY-nEg" secondAttribute="bottom" id="i8q-0x-XwU"/>
                             <constraint firstItem="NKw-Io-q58" firstAttribute="top" secondItem="JaO-4H-kMl" secondAttribute="top" id="j9K-vq-GKo"/>
                             <constraint firstItem="lEW-Gd-QZJ" firstAttribute="top" secondItem="NKw-Io-q58" secondAttribute="bottom" constant="16" id="of0-eN-vIY"/>
-                            <constraint firstItem="bzV-vY-nEg" firstAttribute="top" secondItem="lEW-Gd-QZJ" secondAttribute="bottom" constant="16" id="p6n-dI-2pD"/>
+                            <constraint firstItem="bzV-vY-nEg" firstAttribute="top" secondItem="lEW-Gd-QZJ" secondAttribute="bottom" constant="8" id="p6n-dI-2pD"/>
                             <constraint firstItem="bzV-vY-nEg" firstAttribute="leading" secondItem="JaO-4H-kMl" secondAttribute="leading" id="qVW-fY-aCQ"/>
                         </constraints>
                     </view>

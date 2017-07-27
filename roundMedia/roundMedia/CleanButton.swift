@@ -20,10 +20,5 @@ class CleanButton: UIButton {
     layer.cornerRadius = 2.0
         
     }
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        layer.cornerRadius = self.frame.width / 2
-        clipsToBounds = true
-    }
 
 }
