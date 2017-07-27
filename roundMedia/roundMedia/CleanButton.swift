@@ -20,4 +20,5 @@ class CleanButton: UIButton {
     layer.cornerRadius = 2.0
         
     }
+
 }
