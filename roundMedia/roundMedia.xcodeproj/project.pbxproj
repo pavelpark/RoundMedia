@@ -15,6 +15,7 @@
 		DB0DCD851F1C02C10046E8BC /* CleanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DCD841F1C02C10046E8BC /* CleanButton.swift */; };
 		DB6BDA371F27E41E00503EF1 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BDA361F27E41E00503EF1 /* RoundView.swift */; };
 		DB6BDA391F294E5200503EF1 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BDA381F294E5200503EF1 /* PostCell.swift */; };
+		DB6BDA3C1F2A7E8D00503EF1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BDA3B1F2A7E8D00503EF1 /* DataService.swift */; };
 		DBCED1981F15E06800B90586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCED1971F15E06800B90586 /* AppDelegate.swift */; };
 		DBCED19A1F15E06800B90586 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCED1991F15E06800B90586 /* SignInViewController.swift */; };
 		DBCED19D1F15E06800B90586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCED19B1F15E06800B90586 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		DB0DCD861F1DFAFA0046E8BC /* roundMedia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = roundMedia.entitlements; sourceTree = "<group>"; };
 		DB6BDA361F27E41E00503EF1 /* RoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 		DB6BDA381F294E5200503EF1 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		DB6BDA3B1F2A7E8D00503EF1 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		DBCED1941F15E06800B90586 /* roundMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roundMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCED1971F15E06800B90586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBCED1991F15E06800B90586 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		DB6BDA3A1F2A7E5900503EF1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DB6BDA3B1F2A7E8D00503EF1 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		DBCED18B1F15E06800B90586 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 		DBCED1961F15E06800B90586 /* roundMedia */ = {
 			isa = PBXGroup;
 			children = (
+				DB6BDA3A1F2A7E5900503EF1 /* Services */,
 				DB0DCD861F1DFAFA0046E8BC /* roundMedia.entitlements */,
 				DB0DCD7D1F19AA920046E8BC /* Util */,
 				DB0DCD791F1700B50046E8BC /* Model */,
@@ -285,6 +296,7 @@
 				DB6BDA371F27E41E00503EF1 /* RoundView.swift in Sources */,
 				DB0DCD831F19AE090046E8BC /* CleanText.swift in Sources */,
 				DBE014E11F20926E0010D533 /* FeedViewController.swift in Sources */,
+				DB6BDA3C1F2A7E8D00503EF1 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
