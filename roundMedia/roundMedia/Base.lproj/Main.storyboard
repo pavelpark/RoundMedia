@@ -307,6 +307,13 @@
                                                 <constraint firstAttribute="trailing" secondItem="4nX-TH-xES" secondAttribute="trailing" constant="16" id="iD7-ba-htZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="LikesLabel" destination="d5O-j7-dvW" id="cUV-WE-2KI"/>
+                                            <outlet property="caption" destination="kwf-Ww-64C" id="8Rb-UG-Lvx"/>
+                                            <outlet property="postImg" destination="Inv-7g-zwE" id="HEr-oj-5aV"/>
+                                            <outlet property="profileImg" destination="Q70-H9-UQc" id="0Ex-Uc-6y9"/>
+                                            <outlet property="usernameLabel" destination="x8j-ck-bky" id="Ch1-m8-Zxa"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
