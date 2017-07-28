@@ -54,7 +54,8 @@ class SignInViewController: UIViewController {
             } else {
                 print("------: Susseccfully authenticated with Firebase")
                 if user != nil {
-                    self.completeWithSignIn(id: (user?.uid)!)
+                    let userData = ["provider": user?.providerID]
+                    self.completeWithSignIn(id: (user?.uid)!, userData: userData as! Dictionary<String, String>)
                 }
             }
         }
@@ -66,14 +67,18 @@ class SignInViewController: UIViewController {
             Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
                 if error == nil {
                     print("-----: Email user authenticated with Firebase")
-                    self.completeWithSignIn(id: (user?.uid)!)
+                    let userData = ["provider": user?.providerID]
+                    self.completeWithSignIn(id: (user?.uid)!, userData: userData as! Dictionary<String, String>)
                 } else {
                     Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                         if error != nil {
                             print("------: Unable to authenticate with Firebase using email")
                         } else {
                             print("------: Successfully authenticated with Firebase")
-                            self.completeWithSignIn(id: (user?.uid)!)
+                            if let user = user {
+                                let userData = ["provider": user.providerID]
+                                self.completeWithSignIn(id: user.uid, userData: userData)
+                            }
                         }
                     })
                 }
@@ -81,7 +86,8 @@ class SignInViewController: UIViewController {
         }
     }
     
-    func completeWithSignIn(id: String) {
+    func completeWithSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirbaseDBUser(uid: id, userData: userData)
         let keychainResult = KeychainWrapper.standard.set("string" , forKey: "key uid")
         print("------: Data saved to keychain \(keychainResult)")
         performSegue(withIdentifier: "goToFeed", sender: nil)
