@@ -19,7 +19,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.delegate = self
         tableView.dataSource = self
-
+        
+        DataService.ds.REF_POSTS
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
