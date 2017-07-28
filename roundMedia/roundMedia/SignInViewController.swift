@@ -54,7 +54,7 @@ class SignInViewController: UIViewController {
             } else {
                 print("------: Susseccfully authenticated with Firebase")
                 if user != nil {
-                    let userData = ["provider": user?.providerID]
+                    let userData = ["provider": credential.provider]
                     self.completeWithSignIn(id: (user?.uid)!, userData: userData as! Dictionary<String, String>)
                 }
             }
