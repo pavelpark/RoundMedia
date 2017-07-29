@@ -20,7 +20,7 @@ class Post {
     var imageUrl: String {
         return _imageUrl
     }
-    var likes: Int? {
+    var likes: Int {
         return _likes
     }
     var postKey: String {
