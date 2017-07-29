@@ -33,6 +33,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                     }
                 }
             }
+            self.tableView.reloadData()
         })
     }
     
@@ -41,11 +42,17 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        
+        return posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let post = posts[indexPath.row]
+        print("-----: \(post.caption)")
+        
         return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+        
     }
     
     
