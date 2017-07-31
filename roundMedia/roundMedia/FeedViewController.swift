@@ -68,6 +68,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageAdd.image = image
+        } else {
+            print("-----: A valid image wasn't selected.")
         }
         imagePicker.dismiss(animated: true, completion: nil)
     }
