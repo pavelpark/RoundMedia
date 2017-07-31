@@ -10,11 +10,12 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate{
+class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [Post]()
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         })
     }
     
+    //Table View
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -56,6 +58,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         } else {
             return PostCell()
         }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        imagePicker.dismiss(animated: true, completion: nil)
     }
     
     
