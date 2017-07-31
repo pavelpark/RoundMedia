@@ -342,6 +342,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="eDo-uI-eRP" id="AI5-Ie-coT"/>
                         <outlet property="tableView" destination="bzV-vY-nEg" id="Me3-QU-sfD"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="ynj-aT-X8P"/>
                     </connections>

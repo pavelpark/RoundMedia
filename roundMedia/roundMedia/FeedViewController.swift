@@ -13,6 +13,7 @@ import SwiftKeychainWrapper
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var imageAdd: RoundView!
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
@@ -65,11 +66,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            imageAdd.image = image
+        }
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func addImageTapped(_ sender: Any) {
-        
+        present(imagePicker, animated: true, completion: nil)
     }
     
     
