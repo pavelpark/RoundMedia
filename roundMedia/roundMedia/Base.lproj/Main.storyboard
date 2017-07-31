@@ -190,10 +190,14 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="eDo-uI-eRP" customClass="RoundView" customModule="roundMedia" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="1" green="0.56078431370000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="cT4-S6-NmH"/>
                                                     <constraint firstAttribute="width" constant="49" id="kg9-hM-WgX"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="cwy-xd-0QV" appends="YES" id="lZ6-ST-q4L"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kno-zw-Yxy" customClass="CleanText" customModule="roundMedia" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="0.0" width="209" height="49"/>
@@ -346,6 +350,11 @@
                 <tapGestureRecognizer id="QK2-VT-riy">
                     <connections>
                         <action selector="signOutButton:" destination="oxh-Dh-SHU" id="a7d-Ak-qQq"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cwy-xd-0QV">
+                    <connections>
+                        <action selector="addImageTapped:" destination="oxh-Dh-SHU" id="vmU-TR-hmH"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

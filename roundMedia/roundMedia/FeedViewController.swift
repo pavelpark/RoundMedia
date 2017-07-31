@@ -68,6 +68,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func addImageTapped(_ sender: Any) {
+        
+    }
+    
+    
     @IBAction func signOutButton(_ sender: Any) {
         let KeychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("-----: Removed successful \(KeychainResult)")
