@@ -240,7 +240,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4nX-TH-xES" customClass="CleanView" customModule="roundMedia" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="8" width="343" height="331.5"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yct-DC-8Z9">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yct-DC-8Z9">
                                                             <rect key="frame" x="8" y="8" width="327" height="285.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qXH-T9-eEc">
@@ -265,7 +265,7 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Inv-7g-zwE">
-                                                                    <rect key="frame" x="0.0" y="68" width="327" height="122.5"/>
+                                                                    <rect key="frame" x="0.0" y="65" width="327" height="128.5"/>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kwf-Ww-64C">
                                                                     <rect key="frame" x="0.0" y="198.5" width="327" height="87"/>
