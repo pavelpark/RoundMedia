@@ -39,12 +39,12 @@ class PostCell: UITableViewCell {
                     print("-----: Unable to download image from Firebase")
                 } else {
                     print("-----: Image downloaded from Firebase storage")
-                    //if let imgData = data {
-                      //  if let img = UIImage(data: imgData) {
-                       //     self.postImg.image = img
-                       //     FeedViewController.imageCache.setObject(img, forKey: post.imageUrl as NSString)
-                      //  }
-                    //}
+                    if let imgData = data {
+                        if let img = UIImage(data: imgData) {
+                            self.postImg.image = img
+                            FeedViewController.imageCache.setObject(img, forKey: post.imageUrl as NSString)
+                        }
+                    }
                 }
             })
         }
