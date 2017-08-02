@@ -84,6 +84,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         present(imagePicker, animated: true, completion: nil)
     }
     
+    @IBAction func postButtonTapped(_ sender: Any) {
+    }
+    
     
     @IBAction func signOutButton(_ sender: Any) {
         let KeychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
