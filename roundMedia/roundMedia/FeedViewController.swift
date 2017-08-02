@@ -86,7 +86,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func postButtonTapped(_ sender: Any) {
-        
+        guard let caption = captionField.text, caption != "" else {
+            print("-----: Text must be entered.")
+            return
+        }
+        guard let img = imageAdd.image else {
+            print("-----: An image must be selected.")
+            return
+        }
     }
     
     
@@ -98,3 +105,21 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
