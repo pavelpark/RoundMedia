@@ -94,6 +94,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             print("-----: An image must be selected.")
             return
         }
+        if let imgData = UIImageJPEGRepresentation(img, 0.2) {
+            
+            let imgUid = NSUUID().uuidString
+            
+            DataService.ds.REF_POST_IMAGES.child(imgUid)
+        }
     }
     
     
