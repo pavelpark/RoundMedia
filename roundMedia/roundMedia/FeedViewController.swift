@@ -18,7 +18,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
-    static var imageCache: NSCache<NSString, UIImage> = NSCache()    
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    var imageSelected = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -75,6 +77,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageAdd.image = image
+            imageSelected = true
         } else {
             print("-----: A valid image wasn't selected.")
         }
@@ -90,7 +93,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             print("-----: Text must be entered.")
             return
         }
-        guard let img = imageAdd.image else {
+        guard let img = imageAdd.image, imageSelected == true else {
             print("-----: An image must be selected.")
             return
         }
