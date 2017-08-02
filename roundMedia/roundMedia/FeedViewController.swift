@@ -14,6 +14,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageAdd: RoundView!
+    @IBOutlet weak var captionField: CleanText!
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
@@ -85,6 +86,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func postButtonTapped(_ sender: Any) {
+        
     }
     
     
