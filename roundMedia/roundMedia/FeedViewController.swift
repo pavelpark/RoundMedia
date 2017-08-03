@@ -124,6 +124,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
         firebasePost.setValue(post)
+        
+        captionField.text = ""
+        imageSelected = false
+        imageAdd.image = UIImage(named: "add-image")
     }
     
     
