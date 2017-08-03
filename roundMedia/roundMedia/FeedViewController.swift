@@ -109,7 +109,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 } else {
                     print("-----: Successfully uploaded image to Firebase storage")
                     let downloadURL = metadata?.downloadURL()?.absoluteString
-                    self.postToFirebase(imgUrl: downloadURL!)
+                    if let url = downloadURL {
+                        self.postToFirebase(imgUrl: url)
+                    }
                 }
             }
         }
