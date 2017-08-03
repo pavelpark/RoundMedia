@@ -115,11 +115,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func postToFirebase(imgUrl: String) {
-        let posts: Dictionary<String, AnyObject> = [
+        let post: Dictionary<String, AnyObject> = [
         "caption": captionField.text! as AnyObject,
         "imageUrl": imgUrl as AnyObject,
         "likes": 0 as AnyObject
         ]
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
     }
     
     
