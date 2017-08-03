@@ -114,6 +114,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    func postToFirebase(imgUrl: String) {
+        let posts: Dictionary<String, AnyObject> = [
+        "caption": captionField.text! as AnyObject,
+        "imageUrl": imgUrl as AnyObject,
+        "likes": 0 as AnyObject
+        ]
+    }
+    
     
     @IBAction func signOutButton(_ sender: Any) {
         let KeychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
@@ -123,20 +131,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
