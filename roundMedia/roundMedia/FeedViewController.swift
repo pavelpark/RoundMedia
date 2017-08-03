@@ -130,6 +130,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         captionField.text = ""
         imageSelected = false
         imageAdd.image = UIImage(named: "add-image")
+        
+        tableView.reloadData()
     }
     
     
