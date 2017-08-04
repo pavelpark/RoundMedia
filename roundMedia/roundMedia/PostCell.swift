@@ -22,7 +22,11 @@ class PostCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
+        let tap = UITapGestureRecognizer(target: self, action: #selector(likeTapped))
+        tap.numberOfTapsRequired = 1
+        likeImg.addGestureRecognizer(tap)
+        likeImg.isUserInteractionEnabled = true
     }
     
     func configureCell(post: Post, img: UIImage? = nil) {
@@ -57,6 +61,9 @@ class PostCell: UITableViewCell {
                 self.likeImg.image = UIImage(named: "red_heart")
             }
         })
+    }
+    func likeTapped() {
+        
     }
 }
 
