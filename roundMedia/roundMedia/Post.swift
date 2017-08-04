@@ -47,7 +47,13 @@ class Post {
         if let likes = postData["likes"] as? Int {
             self._likes = likes
         }
-        
+    }
+    func adjustLikes(addLike: Bool) {
+        if addLike {
+            _likes = _likes + 1
+        } else {
+            _likes = likes - 1
+        }
     }
 }
 
