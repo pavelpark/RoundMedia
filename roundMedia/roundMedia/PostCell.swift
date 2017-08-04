@@ -68,9 +68,11 @@ class PostCell: UITableViewCell {
             if let _ = snapshot.value as? NSNull {
                 self.likeImg.image = UIImage(named: "red_heart")
                 self.post.adjustLikes(addLike: true)
+                self.likesRef.setValue(true)
             } else {
                 self.likeImg.image = UIImage(named: "empty-heart")
                 self.post.adjustLikes(addLike: false)
+                self.likesRef.removeValue()
             }
         })
     }
