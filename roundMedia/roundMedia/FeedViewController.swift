@@ -32,6 +32,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         imagePicker.delegate = self
         
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            
+            self.posts = []
+            
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
                 for snap in snapshot {
                     print("SNAP: \(snap)")
@@ -64,11 +67,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             if let img = FeedViewController.imageCache.object(forKey: post.imageUrl as NSString) {
                 cell.configureCell(post: post, img: img)
-                return cell
             } else {
                 cell.configureCell(post: post)
-                return cell
             }
+            return cell
         } else {
             return PostCell()
         }

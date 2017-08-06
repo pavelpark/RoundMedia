@@ -23,7 +23,7 @@ class SignInViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        if let _ = KeychainWrapper.defaultKeychainWrapper.string(forKey: KEY_UID){
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID){
             print("------: ID found in keychain")
             performSegue(withIdentifier: "goToFeed", sender: nil)
         }
@@ -55,7 +55,7 @@ class SignInViewController: UIViewController {
                 print("------: Susseccfully authenticated with Firebase")
                 if user != nil {
                     let userData = ["provider": credential.provider]
-                    self.completeWithSignIn(id: (user?.uid)!, userData: userData as! Dictionary<String, String>)
+                    self.completeWithSignIn(id: (user?.uid)!, userData: userData)
                 }
             }
         }

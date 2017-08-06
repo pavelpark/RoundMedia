@@ -199,7 +199,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -426,6 +426,7 @@
 			baseConfigurationReference = 29BECD21DDEC32BD293EDEDB /* Pods-roundMedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = roundMedia/roundMedia.entitlements;
 				DEVELOPMENT_TEAM = FQ3G8657EV;
 				INFOPLIST_FILE = roundMedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -440,6 +441,7 @@
 			baseConfigurationReference = 445C6D23F30956F6D51B760C /* Pods-roundMedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = roundMedia/roundMedia.entitlements;
 				DEVELOPMENT_TEAM = FQ3G8657EV;
 				INFOPLIST_FILE = roundMedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
