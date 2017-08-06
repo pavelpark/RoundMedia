@@ -20,7 +20,7 @@ class PostCell: UITableViewCell {
     
     var post: Post!
     
-    let likesRef = DataService.ds.REF_USER_CURRENT.child("likes")
+    var likesRef: DatabaseReference!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,6 +33,7 @@ class PostCell: UITableViewCell {
     
     func configureCell(post: Post, img: UIImage? = nil) {
         self.post = post
+        likesRef = DataService.ds.REF_USER_CURRENT.child("likes").child(post.postKey)
         self.caption.text = post.caption
         self.LikesLabel.text = "\(post.likes)"
         

@@ -57,6 +57,7 @@ class Post {
         } else {
             _likes = likes - 1
         }
+        _postRef.child("likes").setValue(_likes)
     }
 }
 
