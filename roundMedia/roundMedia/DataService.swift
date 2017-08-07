@@ -36,7 +36,7 @@ class DataService {
         return _REF_USERS
     }
     var REF_USER_CURRENT: DatabaseReference{
-        let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
+        let uid = KeychainWrapper.standard.string(forKey: "key uid")
         let user = REF_USERS.child(uid!)
         return user
     }
@@ -49,3 +49,4 @@ class DataService {
     }
     
 }
+
