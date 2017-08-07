@@ -88,10 +88,11 @@ class SignInViewController: UIViewController {
     
     func completeWithSignIn(id: String, userData: Dictionary<String, String>) {
         DataService.ds.createFirbaseDBUser(uid: id, userData: userData)
-        let keychainResult = KeychainWrapper.standard.set("string" , forKey: "key uid")
+        let keychainResult = KeychainWrapper.standard.set(id , forKey: "key uid")
         print("------: Data saved to keychain \(keychainResult)")
         performSegue(withIdentifier: "goToFeed", sender: nil)
     }
     
 }
+
 
