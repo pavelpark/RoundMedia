@@ -56,6 +56,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.view.endEditing(true)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        captionField.resignFirstResponder()
+        return true
+    }
+    
     //Table View
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -142,11 +147,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.reloadData()
     }
-    
-//    func dismissKeyboard() {
-//        self.view.endEditing(true)
-//    }
-    
     
     @IBAction func signOutButton(_ sender: Any) {
         let KeychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
