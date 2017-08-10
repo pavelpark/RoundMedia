@@ -148,11 +148,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.reloadData()
     }
     
-//    func dismissKeyboard() {
-//        self.view.endEditing(true)
-//    }
-    
-    
     @IBAction func signOutButton(_ sender: Any) {
         let KeychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("-----: Removed successful \(KeychainResult)")
