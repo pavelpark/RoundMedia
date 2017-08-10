@@ -56,6 +56,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.view.endEditing(true)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        captionField.resignFirstResponder()
+        return true
+    }
+    
     //Table View
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
