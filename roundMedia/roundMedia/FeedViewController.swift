@@ -51,6 +51,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         })
     }
     
+    //KeyboardAway
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     //Table View
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
