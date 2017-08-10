@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate{
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageAdd: RoundView!
@@ -23,6 +23,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.captionField.delegate = self
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -47,6 +49,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
             self.tableView.reloadData()
         })
+    }
+    
+    //KeyboardAway
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     //Table View
