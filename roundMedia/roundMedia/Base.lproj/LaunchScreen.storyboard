@@ -24,9 +24,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aq9-u6-WV3">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="freestocks-org-72172" translatesAutoresizingMaskIntoConstraints="NO" id="dAl-5Z-vKS">
+                                    <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="freestocks-org-72172" translatesAutoresizingMaskIntoConstraints="NO" id="dAl-5Z-vKS">
                                         <rect key="frame" x="0.0" y="-19" width="375" height="666"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RMLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IXa-FH-P6q">
                                         <rect key="frame" x="85" y="168" width="205" height="205"/>
@@ -40,6 +39,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="dAl-5Z-vKS" firstAttribute="leading" secondItem="aq9-u6-WV3" secondAttribute="leading" id="A7y-Xc-LU9"/>
+                                    <constraint firstAttribute="bottom" secondItem="dAl-5Z-vKS" secondAttribute="bottom" id="GVf-7P-g4H"/>
+                                    <constraint firstItem="dAl-5Z-vKS" firstAttribute="top" secondItem="aq9-u6-WV3" secondAttribute="top" constant="-19" id="oKZ-2J-qFD"/>
+                                    <constraint firstAttribute="trailing" secondItem="dAl-5Z-vKS" secondAttribute="trailing" id="qiX-U8-loN"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
