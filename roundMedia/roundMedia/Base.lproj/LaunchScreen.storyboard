@@ -27,21 +27,30 @@
                                     <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="freestocks-org-72172" translatesAutoresizingMaskIntoConstraints="NO" id="dAl-5Z-vKS">
                                         <rect key="frame" x="0.0" y="-19" width="375" height="666"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RMLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IXa-FH-P6q">
-                                        <rect key="frame" x="85" y="168" width="205" height="205"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Round Media" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9x-5k-fXm">
-                                        <rect key="frame" x="72" y="394" width="230" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="33"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-4C-jW8">
+                                        <rect key="frame" x="72" y="185" width="230" height="277.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RMLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IXa-FH-P6q">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="230" id="TD0-XS-rSN"/>
+                                                    <constraint firstAttribute="height" constant="230" id="pca-Lw-9NN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round Media" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9x-5k-fXm">
+                                                <rect key="frame" x="0.0" y="232" width="230" height="45.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="33"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="dAl-5Z-vKS" firstAttribute="leading" secondItem="aq9-u6-WV3" secondAttribute="leading" id="A7y-Xc-LU9"/>
+                                    <constraint firstItem="zIk-4C-jW8" firstAttribute="centerX" secondItem="aq9-u6-WV3" secondAttribute="centerX" id="AJe-Di-Eyd"/>
                                     <constraint firstAttribute="bottom" secondItem="dAl-5Z-vKS" secondAttribute="bottom" id="GVf-7P-g4H"/>
+                                    <constraint firstItem="zIk-4C-jW8" firstAttribute="centerY" secondItem="aq9-u6-WV3" secondAttribute="centerY" id="VAJ-Wb-wwx"/>
                                     <constraint firstItem="dAl-5Z-vKS" firstAttribute="top" secondItem="aq9-u6-WV3" secondAttribute="top" constant="-19" id="oKZ-2J-qFD"/>
                                     <constraint firstAttribute="trailing" secondItem="dAl-5Z-vKS" secondAttribute="trailing" id="qiX-U8-loN"/>
                                 </constraints>
