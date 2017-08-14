@@ -32,7 +32,6 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.30980392156862746" green="0.76470588235294112" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="RZe-He-LQq" firstAttribute="centerY" secondItem="OZ9-02-Jpt" secondAttribute="centerY" constant="9.5" id="J2D-hy-Vz4"/>
                                     <constraint firstItem="RZe-He-LQq" firstAttribute="centerX" secondItem="OZ9-02-Jpt" secondAttribute="centerX" id="vxP-cg-NE3"/>
@@ -45,11 +44,10 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you haven't signed in before, an account will be automatically created for you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSo-NZ-imx">
                                         <rect key="frame" x="8" y="8" width="359" height="59"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.16078431372549018" green="0.71372549019607845" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="KSo-NZ-imx" secondAttribute="trailing" constant="8" id="EoR-6e-jax"/>
                                     <constraint firstAttribute="height" constant="75" id="Pu4-6L-l0Y"/>
@@ -58,6 +56,10 @@
                                     <constraint firstAttribute="bottom" secondItem="KSo-NZ-imx" secondAttribute="bottom" constant="8" id="mzs-oN-utd"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="freestocks-org-72172" translatesAutoresizingMaskIntoConstraints="NO" id="Jtq-6b-kcn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bd-H2-eXg">
                                 <rect key="frame" x="8" y="170" width="359" height="20"/>
                                 <constraints>
@@ -79,25 +81,25 @@
                                     <action selector="facebookButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="390-ZU-mhS"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ce-mo-qBS" customClass="CleanText" customModule="roundMedia" customModuleProvider="target">
-                                <rect key="frame" x="67" y="311" width="241" height="25"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ce-mo-qBS" customClass="CleanText" customModule="roundMedia" customModuleProvider="target">
+                                <rect key="frame" x="67" y="311" width="241" height="29"/>
                                 <color key="textColor" cyan="0.70672869682312012" magenta="0.48866370320320129" yellow="0.012355527840554714" black="1" alpha="0.86552868150684936" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s32-97-WHK" customClass="CleanText" customModule="roundMedia" customModuleProvider="target">
-                                <rect key="frame" x="67" y="356" width="241" height="25"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s32-97-WHK" customClass="CleanText" customModule="roundMedia" customModuleProvider="target">
+                                <rect key="frame" x="67" y="360" width="241" height="29"/>
                                 <color key="textColor" cyan="0.70672869679999994" magenta="0.48866370320000002" yellow="0.01235552784" black="1" alpha="0.86552868149999995" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjN-Ez-FqF" customClass="CleanButton" customModule="roundMedia" customModuleProvider="target">
-                                <rect key="frame" x="246" y="397" width="62" height="30"/>
+                                <rect key="frame" x="246" y="405" width="62" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="62" id="R1M-cY-U09"/>
                                     <constraint firstAttribute="height" constant="30" id="jum-YU-vdf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="emailSignInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="okv-dT-6vF"/>
@@ -136,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="126"/>
+            <point key="canvasLocation" x="136.80000000000001" y="125.4872563718141"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="LHK-iE-UA8">
@@ -373,6 +375,7 @@
         <image name="add-post" width="88" height="88"/>
         <image name="empty-heart" width="70" height="70"/>
         <image name="fb" width="800" height="301"/>
+        <image name="freestocks-org-72172" width="5472" height="3648"/>
         <image name="placeholder" width="750" height="553"/>
         <image name="profilePic" width="140" height="140"/>
         <image name="sign-out" width="92" height="65"/>
